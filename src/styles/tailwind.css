@@ -1,0 +1,60 @@
+@import 'tailwindcss';
+
+@theme {
+    --color-black: #1e1e1e;
+    --color-white: #ffffff;
+    --color-orange: #ff8d28;
+    --color-gray-50: #b5b5b5;
+    --color-gray-100: #737373;
+    --color-gray-150: #474646;
+    --color-gray-200: #2a2a2a;
+    --color-gray-250: #1a1a1a;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('/assets/fonts/Pretendard-Light.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('/assets/fonts/Pretendard-Regular.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('/assets/fonts/Pretendard-Medium.otf') format('opentype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('/assets/fonts/Pretendard-Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@layer base {
+    * {
+        @apply font-[Pretendard] text-white;
+    }
+
+    body {
+        @apply font-[Pretendard] text-white;
+    }
+
+    button {
+        @apply cursor-pointer;
+    }
+    #container {
+        @apply flex flex-col flex-1  min-h-screen w-full;
+    }
+    #container > main {
+        @apply flex-1 max-w-[1200px] mx-auto h-[calc(100vh-67px)];
+    }
+}
