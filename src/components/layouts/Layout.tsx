@@ -5,7 +5,7 @@ export default function Layout() {
     return (
         <div id="container" className="bg-black">
             <Header />
-            <main>
+            <main className="l-inner">
                 <Outlet />
             </main>
         </div>

@@ -1,5 +1,3 @@
-@import 'tailwindcss';
-
 @theme {
     --color-black: #1e1e1e;
     --color-white: #ffffff;
@@ -50,11 +48,5 @@
 
     button {
         @apply cursor-pointer;
-    }
-    #container {
-        @apply flex flex-col flex-1  min-h-screen w-full;
-    }
-    #container > main {
-        @apply flex-1 max-w-[1200px] mx-auto h-[calc(100vh-67px)];
     }
 }

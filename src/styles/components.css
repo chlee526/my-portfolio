@@ -1,0 +1,37 @@
+@layer components {
+    #container {
+        @apply flex flex-col flex-1  min-h-screen w-full;
+    }
+    #container > main {
+        @apply flex-1 h-[calc(100vh-67px)];
+    }
+
+    .l-inner {
+        @apply max-w-[1200px] mx-auto;
+    }
+
+    header {
+        @apply sticky top-0 left-0 w-full z-10 bg-gray-200 h-[67px] px-[30px];
+
+        nav > ul {
+            @apply flex items-center gap-[20px];
+        }
+
+        nav > ul > li {
+            display: block;
+            padding: 6px 10px;
+            border-bottom: 2px solid transparent;
+            font-size: 18px;
+            font-weight: 600;
+            color: #737373;
+            transition: all 0.3s ease-in-out;
+            cursor: pointer;
+
+            @apply hover:text-white;
+
+            &.active {
+                @apply border-orange text-white;
+            }
+        }
+    }
+}
