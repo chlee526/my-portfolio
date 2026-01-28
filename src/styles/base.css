@@ -39,11 +39,11 @@
 
 @layer base {
     * {
-        @apply font-[Pretendard] text-white;
+        @apply font-[Pretendard];
     }
 
     body {
-        @apply font-[Pretendard] text-white;
+        @apply font-[Pretendard] text-white bg-black;
     }
 
     button {

@@ -1,6 +1,9 @@
+import MainComponent from './components/MainComponent';
 
 export default function HomePage() {
-  return (
-    <div>HomePage</div>
-  )
+    return (
+        <>
+            <MainComponent />
+        </>
+    );
 }

@@ -7,7 +7,7 @@
     }
 
     .l-inner {
-        @apply max-w-[1200px] mx-auto;
+        @apply w-full max-w-[1200px] mx-auto;
     }
 
     header {
