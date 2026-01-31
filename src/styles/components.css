@@ -1,17 +1,17 @@
 @layer components {
     #container {
-        @apply flex flex-col flex-1  min-h-screen w-full;
+        @apply flex min-h-screen w-full flex-1 flex-col;
     }
     #container > main {
-        @apply flex-1 h-[calc(100vh-67px)];
+        @apply h-[calc(100vh-67px)] flex-1;
     }
 
     .l-inner {
-        @apply w-full max-w-[1200px] mx-auto;
+        @apply mx-auto w-full max-w-[1200px];
     }
 
     header {
-        @apply sticky top-0 left-0 w-full z-10 bg-gray-200 h-[67px] px-[30px];
+        @apply sticky top-0 left-0 z-10 h-[67px] w-full bg-gray-200 px-[30px];
 
         nav > ul {
             @apply flex items-center gap-[20px];
@@ -33,5 +33,22 @@
                 @apply border-orange text-white;
             }
         }
+    }
+
+    /* Buttons */
+    .button-primary {
+        @apply flex items-center gap-[10px] rounded-[99px] border px-[20px] py-[10px];
+        @apply bg-orange border-orange font-bold text-white;
+        @apply transition-all duration-300;
+        /* @apply hover:text-orange hover:bg-transparent; */
+        @apply hover:-translate-y-1 hover:shadow-[0_4px_8px_rgba(255,108,55,0.4)];
+    }
+
+    .button-secondary {
+        @apply flex items-center gap-[10px] rounded-[99px] border px-[20px] py-[10px];
+        @apply border-white text-white;
+        @apply transition-all duration-300;
+        /* @apply hover:bg-white hover:text-black; */
+        @apply hover:-translate-y-1 hover:shadow-[0_4px_8px_rgba(255,255,255,0.4)];
     }
 }

@@ -20,4 +20,18 @@
     .hover-glow {
         @apply transition-shadow duration-300 hover:shadow-[0_0_20px_rgba(255,141,40,0.3)];
     }
+
+    /* Animation effects */
+    .animate-bounce-slow {
+        animation: bounce-slow 2s ease-in-out infinite;
+    }
+
+    @keyframes bounce-slow {
+        0%, 100% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-10px);
+        }
+    }
 }
